@@ -32,7 +32,7 @@
             dateRange = dateSelect.MPDatepicker('value');
         var params = 
           dateRange;
-          params['limit'] = '20';
+          params['limit'] = '50';
 
         if (eventName) {
           MP.api.segment(eventName, propName, params).done(function(results) {
